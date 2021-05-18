@@ -1,0 +1,7 @@
+1.getOpposite
+2.isEven
+3.getFullName
+4.getLengthOfWord
+5.getProperty
+6.countPositivesSumNegatives
+7.printPrimes
