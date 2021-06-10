@@ -1,11 +1,17 @@
-function printPrimes(n){
-    if(n<2)
-    return `${n} is neither prime nor composite number.`;
-    else if(n>1){
-        for(i=2;i<n;i++){
-         
-        }
+function printPrimes(inp) {
+  let n = +inp[0],
+    res = [];
+  for (let i = 1; i < n; i++) {
+    let flag = 0;
+    for (let j = 2; j < i; j++) {
+      if (i % j == 0) {
+        flag = 1;
+        break;
+      }
     }
+    if (i > 1 && flag == 0) res.push(i);
+  }
+  return res;
 }
-let arr=[];
-console.log(printPrimes(0));
+let userInput = ["10"];
+console.log(...printPrimes(userInput));
